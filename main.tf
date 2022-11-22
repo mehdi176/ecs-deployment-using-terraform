@@ -10,7 +10,7 @@
 }
  */
  module "ecs-fargate-service" {
-  // depends_on                = [module.vpc]
+  // depends_on                = [module.vpc] //
    source                  = "./modules/ecs-fargate-service"
    vpc_id                  = var.vpc_id
    environment             = var.environment
